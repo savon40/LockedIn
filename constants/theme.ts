@@ -1,53 +1,41 @@
-/**
- * Below are the colors that are used in the app. The colors are defined in the light and dark mode.
- * There are many other ways to style your app. For example, [Nativewind](https://www.nativewind.dev/), [Tamagui](https://tamagui.dev/), [unistyles](https://reactnativeunistyles.vercel.app), etc.
- */
-
-import { Platform } from 'react-native';
-
-const tintColorLight = '#0a7ea4';
-const tintColorDark = '#fff';
-
+// Matched exactly to HTML design mockup CSS variables
 export const Colors = {
-  light: {
-    text: '#11181C',
-    background: '#fff',
-    tint: tintColorLight,
-    icon: '#687076',
-    tabIconDefault: '#687076',
-    tabIconSelected: tintColorLight,
-  },
-  dark: {
-    text: '#ECEDEE',
-    background: '#151718',
-    tint: tintColorDark,
-    icon: '#9BA1A6',
-    tabIconDefault: '#9BA1A6',
-    tabIconSelected: tintColorDark,
-  },
-};
+  // Primary
+  primary: '#FF6600',
+  primaryForeground: '#FFFFFF',
+  accent: '#FF9900',
 
-export const Fonts = Platform.select({
-  ios: {
-    /** iOS `UIFontDescriptorSystemDesignDefault` */
-    sans: 'system-ui',
-    /** iOS `UIFontDescriptorSystemDesignSerif` */
-    serif: 'ui-serif',
-    /** iOS `UIFontDescriptorSystemDesignRounded` */
-    rounded: 'ui-rounded',
-    /** iOS `UIFontDescriptorSystemDesignMonospaced` */
-    mono: 'ui-monospace',
-  },
-  default: {
-    sans: 'normal',
-    serif: 'serif',
-    rounded: 'normal',
-    mono: 'monospace',
-  },
-  web: {
-    sans: "system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif",
-    serif: "Georgia, 'Times New Roman', serif",
-    rounded: "'SF Pro Rounded', 'Hiragino Maru Gothic ProN', Meiryo, 'MS PGothic', sans-serif",
-    mono: "SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace",
-  },
-});
+  // Backgrounds
+  background: '#FFF7F0',
+  card: '#FFFFFF',
+  secondary: '#F5F5F5',
+  muted: '#FFE5CC',
+
+  // Text
+  foreground: '#3A3A3A',
+  mutedForeground: '#7A5A3A',
+
+  // UI
+  border: '#E0E0E0',
+  ring: '#FF6600',
+
+  // Status
+  success: '#34C759',
+  warning: '#FF9500',
+  error: '#EF4444',
+
+  // Blocked state
+  blockedBg: 'rgba(239, 68, 68, 0.05)',
+  blockedBorder: 'rgba(239, 68, 68, 0.2)',
+  blockedText: '#EF4444',
+
+  // Charts
+  chart1: '#FF6600',
+  chart2: '#FF9900',
+  chart3: '#FFE5CC',
+  chart4: '#D94F00',
+  chart5: '#7A5A3A',
+
+  // Tab bar
+  inactive: '#B8A48F',
+};
